@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HoaDon">
+
+    <TextView
+        android:id="@+id/hoadon_magd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã hóa đơn: 01"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/hoadon_hinhsp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hoadon_magd"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/hoadon_tensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sản phẩm: Keo dính chuột"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/hoadon_hinhsp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/hoadon_masp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã sản phẩm: 6969"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/hoadon_tensp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/hoadon_soluongsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng: 5"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/hoadon_masp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/hoadon_giasp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đơn giá: 69,000 VNĐ"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/hoadon_soluongsp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/hoadon_tongtien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền: 345,000"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/hoadon_giasp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/hoadon_thoigian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giao dịch: 11/28/2019 5:12:55 AM"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/hoadon_tongtien"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/hoadon_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hoadon_thoigian"
+        android:layout_marginTop="30dp"
+        android:text="Xuất hóa đơn"
+        android:background="#FAFAFA"
+        android:textColor="#E98C6B"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

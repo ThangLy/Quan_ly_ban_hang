@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_login"
+    android:background="#E6EBEB"
+    tools:context=".Login">
+
+    <ProgressBar
+        android:id="@+id/login_process"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/login_OK"
+        app:layout_constraintBottom_toBottomOf="@id/login_OK"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <EditText
+        android:text="thang"
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_height="wrap_content"
+        android:hint="Tài khoản"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_password"
+        />
+
+    <EditText
+        android:text="123456"
+        android:inputType="textPassword"
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_OK"
+        android:hint="Mật khẩu"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/login_OK"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#FAFAFA"
+        android:textColor="#E98C6B"
+        android:text="Đăng nhập"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
