@@ -1,1 +1,1 @@
-Quản lý bán hàng và hàng tồn kho trong android
+Quản lý bán hàng và hàng tồn kho (android)
